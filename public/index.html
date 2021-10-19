@@ -10,13 +10,13 @@
 <body>
     <!-- navbar -->
     <div x-data="{ open: false }">
-        <div class="bg-red-500 text-white absolute z-10 top-0 left-0 right-0">
+        <div class="bg-red-500 text-white fixed z-10 top-0 left-0 right-0">
         <div class="container justify-between items-center flex">
                 <a class="text-xl font-semibold py-3" href="#">Musyahya</a>
                 <div class="hidden sm:flex">
-                    <a class="px-2 py-3 hover:text-red-500 hover:bg-white" href="#">Tentang</a>
-                    <a class="px-2 py-3 hover:text-red-500 hover:bg-white" href="#">Projek</a>
-                    <a class="px-2 py-3 hover:text-red-500 hover:bg-white" href="#">Kontak</a>
+                    <a class="px-2 py-3 hover:text-red-500 hover:bg-white" href="#tentang">Tentang</a>
+                    <a class="px-2 py-3 hover:text-red-500 hover:bg-white" href="#projek">Projek</a>
+                    <a class="px-2 py-3 hover:text-red-500 hover:bg-white" href="#kontak">Kontak</a>
                 </div>
                 <svg @click="open = !open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:hidden cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -24,9 +24,9 @@
         </div>
 
         <div x-show="open" class="sm:hidden flex flex-col justify-center items-center border-t border-red-200 bg-red-500 text-white text-center">
-        <a class="mx-2 py-3 hover:text-red-500 hover:bg-white w-full" href="#">Tentang</a>
-        <a class="mx-2 py-3 hover:text-red-500 hover:bg-white w-full" href="#">Projek</a>
-        <a class="mx-2 py-3 hover:text-red-500 hover:bg-white w-full" href="#">Kontak</a>
+        <a @click="open = false" class="mx-2 py-3 hover:text-red-500 hover:bg-white w-full" href="#tentang">Tentang</a>
+        <a @click="open = false" class="mx-2 py-3 hover:text-red-500 hover:bg-white w-full" href="#projek">Projek</a>
+        <a @click="open = false" class="mx-2 py-3 hover:text-red-500 hover:bg-white w-full" href="#kontak">Kontak</a>
         </div>
         </div>
     </div>
@@ -41,9 +41,9 @@
     </div>
 
     <!-- tentang -->
-    <div class="bg-gray-100">
+    <div id="tentang" class="bg-gray-100">
         <div class="container">
-            <div class="flex flex-col justify-center items-center py-10">
+            <div class="flex flex-col justify-center items-center py-12">
             <h1 class="text-3xl font-semibold">Tentang</h1>
             <div class="flex md:flex-row flex-col md:text-left text-center justify-center items-center mt-10">
                     <img class="px-5 flex-1 mb-4" src="./img/avatar.png" alt="">
@@ -58,8 +58,8 @@
     </div>
 
     <!-- projek -->
-    <div class="bg-gray-300">
-        <div class="container py-10">
+    <div id="projek" class="bg-gray-300">
+        <div class="container py-12">
             <div class="flex flex-col justify-center items-center">
                 <h1 class="text-3xl font-semibold">Projek</h1>
                 <div class="flex flex-row flex-wrap mt-5">
@@ -75,28 +75,33 @@
     </div>
 
     <!-- kontak -->
-    <div class="bg-gray-100">
-        <div class="container py-10">
+    <div id="kontak" class="bg-gray-100">
+        <div class="container py-12">
             <div class="flex flex-col justify-center items-center">
                 <h1 class="text-3xl font-semibold">Kontak</h1>
                 <div class="mt-5">
-                    <div class="flex flex-col mt-2">
+                    <div class="flex flex-col mt-4">
                         <label for="">Nama</label>
                         <input type="text" class="w-96 border border-gray-900 rounded-md py-1 px-2 mt-2 focus:outline-none focus:border-blue-500">
                     </div>
-                    <div class="flex flex-col mt-2">
+                    <div class="flex flex-col mt-4">
                         <label for="">Email</label>
                         <input type="email" class="w-96 border border-gray-900 rounded-md py-1 px-2 mt-2 focus:outline-none focus:border-blue-500">
                     </div>
-                    <div class="flex flex-col mt-2">
+                    <div class="flex flex-col mt-4">
                         <label for="">Pesan</label>
-                        <textarea rows="4" class="w-96 border border-gray-900 rounded-md py-1 px-2 mt-2 focus:outline-none focus:border-blue-500"></textarea>
+                        <textarea rows="5" class="w-96 border border-gray-900 rounded-md py-1 px-2 mt-2 focus:outline-none focus:border-blue-500"></textarea>
                     </div>
-                    <button class="mt-4 bg-blue-500 px-3 py-1 rounded-md hover:bg-blue-600 text-white">Kirim</button>
+                    <button class="mt-6 bg-blue-500 px-3 py-1 rounded-md hover:bg-blue-600 text-white">Kirim</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- footer -->
+    <footer class="bg-gray-300">
+        <p class="text-center py-4 font-medium">Copyright musyahya 2021</p>
+    </footer>
 
     <script src="./js/app.js"></script>
 </body>
