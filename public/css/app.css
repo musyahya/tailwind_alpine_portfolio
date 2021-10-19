@@ -6954,16 +6954,8 @@ video {
   flex: 1 1 0%;
 }
 
-.flex-auto {
-  flex: 1 1 auto;
-}
-
-.flex-initial {
-  flex: 0 1 auto;
-}
-
-.flex-none {
-  flex: none;
+.flex-2 {
+  flex: 2 2 0%;
 }
 
 .flex-shrink-0 {
@@ -38272,16 +38264,8 @@ video {
     flex: 1 1 0%;
   }
 
-  .sm\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .sm\:flex-initial {
-    flex: 0 1 auto;
-  }
-
-  .sm\:flex-none {
-    flex: none;
+  .sm\:flex-2 {
+    flex: 2 2 0%;
   }
 
   .sm\:flex-shrink-0 {
@@ -69512,16 +69496,8 @@ video {
     flex: 1 1 0%;
   }
 
-  .md\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .md\:flex-initial {
-    flex: 0 1 auto;
-  }
-
-  .md\:flex-none {
-    flex: none;
+  .md\:flex-2 {
+    flex: 2 2 0%;
   }
 
   .md\:flex-shrink-0 {
@@ -100752,16 +100728,8 @@ video {
     flex: 1 1 0%;
   }
 
-  .lg\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .lg\:flex-initial {
-    flex: 0 1 auto;
-  }
-
-  .lg\:flex-none {
-    flex: none;
+  .lg\:flex-2 {
+    flex: 2 2 0%;
   }
 
   .lg\:flex-shrink-0 {
@@ -131992,16 +131960,8 @@ video {
     flex: 1 1 0%;
   }
 
-  .xl\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .xl\:flex-initial {
-    flex: 0 1 auto;
-  }
-
-  .xl\:flex-none {
-    flex: none;
+  .xl\:flex-2 {
+    flex: 2 2 0%;
   }
 
   .xl\:flex-shrink-0 {
@@ -163232,16 +163192,8 @@ video {
     flex: 1 1 0%;
   }
 
-  .\32xl\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .\32xl\:flex-initial {
-    flex: 0 1 auto;
-  }
-
-  .\32xl\:flex-none {
-    flex: none;
+  .\32xl\:flex-2 {
+    flex: 2 2 0%;
   }
 
   .\32xl\:flex-shrink-0 {

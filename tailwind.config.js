@@ -13,6 +13,10 @@ module.exports = {
         "2xl": "6rem",
       },
     },
+    flex: {
+      1: "1 1 0%",
+      2: "2 2 0%",
+    },
   },
   variants: {
     extend: {},
