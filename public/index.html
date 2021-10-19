@@ -7,7 +7,32 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/app.css">
 </head>
-<body class="bg-green-500">
+<body>
+    <div class="bg-red-500 text-white py-3">
+       <div class="container justify-between items-center flex">
+            <a class="text-xl font-semibold" href="#">Musyahya</a>
+            <div class="hidden sm:flex">
+                <a class="mx-2 hover:text-red-200" href="#">Tentang</a>
+                <a class="mx-2 hover:text-red-200" href="#">Projek</a>
+                <a class="mx-2 hover:text-red-200" href="#">Kontak</a>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+       </div>
+    </div>
+
+    <div x-data="{ open: false }">
+        <button @click="open = true">Open Dropdown</button>
+
+        <ul
+            x-show="open"
+            @click.away="open = false"
+        >
+            Dropdown Body
+        </ul>
+    </div>
     
+    <script src="./js/app.js"></script>
 </body>
 </html>
